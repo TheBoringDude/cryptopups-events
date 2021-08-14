@@ -10,7 +10,15 @@ module.exports = {
     fontFamily: {
       sans: ['"Montserrat"', ...defaultTheme.fontFamily.sans],
     },
-    extend: {},
+    extend: {
+      spacing: {
+        112: "28em",
+        128: "32em",
+        144: "36em",
+        172: "46em",
+        200: "56em",
+      },
+    },
   },
   variants: {
     extend: {},
