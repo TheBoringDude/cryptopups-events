@@ -3,7 +3,7 @@ import EventsHeader from '../../components/EventsHeader.astro'
 import Timer from '../../components/Timer.tsx'
 ---
 
-<div class="py-20 bg-warmGray-900 relative">
+<div class="py-20 relative">
     <div class="relative z-50">
         <EventsHeader />
 
@@ -21,7 +21,8 @@ import Timer from '../../components/Timer.tsx'
         </div>
     </div>
 
-    <video
+  <img src="/_events/season-pass/season-pass.png" class="w-full h-full absolute object-cover inset-0 z-30" style="filter:brightness(15%)" />
+    <!-- <video
         autoplay
         loop
         muted
@@ -29,5 +30,5 @@ import Timer from '../../components/Timer.tsx'
         style="filter:brightness(20%);"
       >
         <source src="/pack_vid.mp4" />
-    </video>
+    </video> -->
 </div>
