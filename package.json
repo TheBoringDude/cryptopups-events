@@ -7,6 +7,7 @@
     "build": "astro build"
   },
   "devDependencies": {
+    "@types/react": "^17.0.17",
     "astro": "^0.18.13",
     "tailwindcss": "^2.2.7"
   },
