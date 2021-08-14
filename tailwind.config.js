@@ -6,6 +6,10 @@ module.exports = {
   purge: ["./public/**/*.html", "./src/**/*.{astro,js,jsx,svelte,ts,tsx,vue}"],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    screens: {
+      xs: "425px",
+      ...defaultTheme.screens,
+    },
     colors,
     fontFamily: {
       sans: ['"Montserrat"', ...defaultTheme.fontFamily.sans],
