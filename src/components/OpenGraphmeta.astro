@@ -1,0 +1,17 @@
+---
+const {description, images} = Astro.props
+---
+
+
+<meta name="description" content={description} />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://events.worldofcryptopups.cf/" />
+<meta property="og:description" content={description} />
+{typeof(images === "string") ? <meta property="og:image" content={images} /> : images.map((i) => (
+    <>
+    <meta property="og:image:url" content={i.url} />
+    <meta property="og:image:width" content={i.width} />
+    <meta property="og:image:height" content={i.height} />
+    <meta property="og:image:alt" content={i.alt} />
+    </>
+))}

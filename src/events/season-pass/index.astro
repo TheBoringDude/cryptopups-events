@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/base.astro'
+import OpenGraph from '../../components/OpenGraphmeta.astro'
 
 import Hero from './hero.astro'
 import FanArt from './fan-contest.astro'
@@ -8,6 +9,8 @@ import FanArt from './fan-contest.astro'
 
 
 <BaseLayout title="Season One Pass">
+    <OpenGraph slot="og" description="Having this pass would allow you to claim your rewards and discounts based on your rank! Enjoy the Adventure!" images="https://event.worldofcryptopups.cf/_events/season-pass/season-pass.png" />
+    
     <Hero />
 
 
