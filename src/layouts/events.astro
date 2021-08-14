@@ -1,0 +1,13 @@
+---
+import BaseLayout from './base.astro'
+import EventsHeader from '../components/EventsHeader.astro'
+
+const {title} = Astro.props
+---
+
+
+<BaseLayout title={title}>
+    <EventsHeader />
+
+    <slot />
+</BaseLayout>

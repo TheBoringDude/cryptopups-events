@@ -1,0 +1,26 @@
+---
+const AllEvents = [
+    {
+        title: 'Season Pass',
+        date: 'August 14, 2021 | 3PM GMT',
+        image: 'season-pass/season-pass.png',
+        slug: '/season-one-pass'
+    }
+]
+
+---
+
+
+<div>
+    {AllEvents.map((e) => (
+        <a href={e.slug}>
+            <div class="2xl:w-3/4 mx-auto my-8 flex flex-col-reverse lg:flex-row items-center justify-between bg-warmGray-800 shadow-2xl hover:scale-110 transform transition-transform duration-1000">
+                <img src={`/_events/${e.image}`} class="h-56 md:h-64 xl:h-72 object-contain" />
+                <div class="w-full text-center px-4 my-12 lg:my-0">
+                    <h3 class="font-black text-5xl text-white tracking-wide">{e.title}</h3>
+                    <strong class="text-xl mt-8 text-gray-200">{e.date}</strong>
+                </div>
+            </div>
+        </a>
+    ))}
+</div>

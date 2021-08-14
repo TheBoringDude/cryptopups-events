@@ -1,0 +1,29 @@
+---
+import EventsHeader from '../../components/EventsHeader.astro'
+---
+
+<div class="py-20 bg-warmGray-900 relative">
+    <div class="relative z-50">
+        <EventsHeader />
+
+        <div class="mt-12 w-5/6 lg:w-2/3 mx-auto text-center text-white">
+            <h1 class="text-6xl tracking-wide font-black underline leading-normal">Season One Pass</h1>
+
+            <p class="text-2xl tracking-wide my-8 text-gray-200">Having this pass would allow you to claim your rewards and discounts based on your rank! Enjoy the Adventure!</p>
+
+            <a href="https://discord.io/worldofcryptopups" target="_blank" rel="noreferer" class="bg-warmGray-900 opacity-90 hover:opacity-100 py-3 px-6 text-lg"><i class="fab fa-discord ml-2"></i> Join the Discord Community</a>
+
+            <img src="/_events/season-pass/season-pass.png" class="mx-auto h-72 mt-16" />
+        </div>
+    </div>
+
+    <video
+        autoplay
+        loop
+        muted
+        class="absolute w-full h-full inset-0 z-30 object-cover"
+        style="filter:brightness(20%);"
+      >
+        <source src="/pack_vid.mp4" />
+      </video>
+</div>
