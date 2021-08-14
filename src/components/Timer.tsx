@@ -104,7 +104,6 @@ const EventsTimer = ({
   if (ongoing)
     return (
       <div className="text-xl tracking-wide my-4">
-        <span className="mr-4 text-sm">(Time Left)</span>
         <p className="text-2xl font-black">
           {timeLeft
             ? Object.keys(timeLeft).map(
@@ -115,7 +114,7 @@ const EventsTimer = ({
               )
             : null}
         </p>
-        <span className="mr-4 text-sm">(Waiting)</span>
+        <span className="mr-4 text-sm">(Time Left)</span>
       </div>
     );
 
