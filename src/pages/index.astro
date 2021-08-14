@@ -1,10 +1,14 @@
 ---
 import BaseLayout from '../layouts/base.astro'
 import AllEvents from '../components/AllEvents.astro'
+import OpenGraph from '../components/OpenGraphmeta.astro'
+
 ---
 
 
 <BaseLayout title="Welcome">
+    <OpenGraph description="View and discover the events that are ongoing and we have!" images="https://events.worldofcryptopups.cf/logo.png" />
+
     <header class="py-4 bg-warmGray-900">
         <nav class="w-11/12 mx-auto flex flex-col sm:flex-row items-center justify-between">
             <a href="/">
