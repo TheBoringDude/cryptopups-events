@@ -44,10 +44,7 @@ const EventsTimer = ({
   date: DATE,
   duration: TIME_EVENT_HOURS,
 }: EventsTimerProps) => {
-  var xDate = new Date(DATE);
-  const END_DATE = new Date(
-    xDate.setHours(xDate.getHours() + TIME_EVENT_HOURS)
-  );
+  const xDate = new Date(DATE);
 
   const [d, setD] = useState(DATE);
   const [waiting, setWaiting] = useState(!isEventDone(DATE));
@@ -56,7 +53,9 @@ const EventsTimer = ({
       return false;
     }
 
-    return !isEventDone(END_DATE.toString());
+    return !isEventDone(
+      new Date(xDate.setHours(xDate.getHours() + TIME_EVENT_HOURS)).toString()
+    );
   });
   const [timeLeft, setTimeLeft] = useState(CalculateEventTime(DATE));
 
@@ -80,9 +79,11 @@ const EventsTimer = ({
 
   useEffect(() => {
     if (!waiting && ongoing) {
-      setD(END_DATE.toString());
+      setD(
+        new Date(xDate.setHours(xDate.getHours() + TIME_EVENT_HOURS)).toString()
+      );
     }
-  }, [waiting, ongoing]);
+  }, [waiting, ongoing, xDate, TIME_EVENT_HOURS]);
 
   if (waiting)
     return (
