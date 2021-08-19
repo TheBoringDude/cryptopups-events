@@ -1,0 +1,17 @@
+---
+import BaseLayout from '../../layouts/base.astro'
+import OpenGraph from '../../components/OpenGraphmeta.astro'
+
+import Hero from './hero.astro'
+import Stuff from './stuff.astro'
+---
+
+
+
+<BaseLayout title="Cordy the Discord Pup">
+    <OpenGraph slot="og" description="Everyone, let's all welcome our new pup, Cordy! Cordy is a discord pup that is now dropping into your wallets to bring you gamer vibes!" images="https://events.worldofcryptopups.cf/_events/season-pass/season-pass.png" />
+    
+    <Hero />
+
+    <Stuff />
+</BaseLayout>
