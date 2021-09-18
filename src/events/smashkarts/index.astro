@@ -1,0 +1,49 @@
+---
+import BaseLayout from '../../layouts/base.astro'
+import OpenGraph from '../../components/OpenGraphmeta.astro'
+
+import evImg from '../../../public/_events/smashkarts/smashkarts_event.png'
+---
+
+
+
+<BaseLayout title="Smash Karts Tournament">
+    <OpenGraph slot="og" description="Join the tournament for amazing prices and fun! Smash Karts is a 3D multiplayer kart battle game. Drive your go-kart, pick up weapons, and blow up other karts to win!" images="https://events.worldofcryptopups.cf/_events/smashkarts/smashkarts_event.png" />
+    
+    <div class="">
+        <img src={evImg} />
+    </div>
+    <hr />
+
+
+    <div class="py-20">
+        <div class="w-5/6 mx-auto text-center">
+            <h3 class="text-5xl font-black text-warmGray-800">Prizes</h3>
+            <ul>
+                <li class="my-8">
+                    <strong class="text-3xl font-black text-warmGray-800 tracking-wide">Champion</strong>
+                    <p class="text-xl tracking-wide text-warmGray-700 mt-2">Infernal packs for the whole team + 50WAX (Split)</p>
+                </li>
+                <li class="my-8">
+                    <strong class="text-3xl font-black text-warmGray-800 tracking-wide">First Runner-up</strong>
+                    <p class="text-xl tracking-wide text-warmGray-700 mt-2">Rare Cards (Random) for the whole team + 30WAX (Split)</p>
+                </li>
+                <li class="my-8">
+                    <strong class="text-3xl font-black text-warmGray-800 tracking-wide">Second Runner-up</strong>
+                    <p class="text-xl tracking-wide text-warmGray-700 mt-2">Blaze Pack + 10WAX (Split)</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <hr />
+
+    <div class="bg-warmGray-100 py-20">
+        <div class="text-center text-lg">
+            <p class="mb-8">Join the community for more information, details and other events!</p>
+            <a class="py-2 px-8 rounded-full bg-warmGray-600 hover:bg-warmGray-700 text-white" href="https://discord.gg/ZKEezUwzaB" target="_blank" rel="noreferrer">Discord Community</a>
+        </div>
+    </div>
+
+
+</BaseLayout>

@@ -8,7 +8,7 @@
   },
   "devDependencies": {
     "@types/react": "^17.0.17",
-    "astro": "^0.18.13",
+    "astro": "^0.20.7",
     "tailwindcss": "^2.2.7"
   },
   "dependencies": {}
